@@ -1,0 +1,12 @@
+FUNCTION Is palindrome(word, left, right):
+VAR
+    n= lenght(word)
+BEGIN
+   if n <= 1:
+       return true
+       else:
+       if word[left] == word [right]:
+       return Is palindrome (word, left+1, right-1)
+       else:
+       return false
+END
